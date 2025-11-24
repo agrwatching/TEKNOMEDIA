@@ -1,6 +1,7 @@
 // src/components/layout/Footer.tsx
 import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 import React from "react";
+import logo from '../../assets/LOGO TEKNOMEDIA.png'; 
 
 const Footer: React.FC = () => {
   return (
@@ -15,10 +16,13 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               {/* Logo (diambil dari Header) */}
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center shadow-lg shadow-primary/50">
-                <span className="text-white font-bold text-xl">T</span>
-              </div>
-              <span className="text-2xl font-bold">Teknomedia</span>
+                         <img 
+                src={logo} 
+                alt="Teknomedia Logo" 
+                className={`h-12 w-12 transition-opacity duration-300 rounded-full 
+                }`} 
+            />
+              <span className="text-2xl font-bold">TEKNOMEDIA</span>
             </div>
             <p className="text-background/70 mb-6 text-sm">
               Platform teknologi pendidikan terdepan untuk masa depan yang lebih cerah.
@@ -42,7 +46,7 @@ const Footer: React.FC = () => {
 
           {/* KOLOM 2: Produk */}
           <div>
-            <h3 className="text-lg font-bold mb-4 border-b border-primary/50 pb-1">Produk</h3>
+            <h3 className="text-lg font-bold mb-4 border-b border-primary/50 pb-1  pt-4 md:pt-0">Produk</h3>
             <ul className="space-y-2 text-background/70 text-sm">
               <li><a href="#" className="hover:text-primary transition-colors">LMS Teknomedia</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Mobile App</a></li>
