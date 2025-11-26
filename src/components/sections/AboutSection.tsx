@@ -277,10 +277,13 @@ const AboutSection: React.FC = () => {
             </p>
 
             {/* DECORATIVE LINE */}
-            <div className="mt-6 flex justify-center items-center space-x-3">
-              <div className="h-px w-16 bg-gradient-to-r from-transparent to-primary"></div>
-              <div className="w-3 h-3 rounded-full bg-primary animate-ping"></div>
-              <div className="h-px w-16 bg-gradient-to-l from-transparent to-accent"></div>
+            <div
+              className="mt-8 flex justify-center items-center space-x-3 animate-fade-in"
+              style={{ animationDelay: "0.3s" }}
+            >
+              <div className="h-px w-20 bg-gradient-to-r from-transparent to-indigo-500"></div>
+              <div className="w-3 h-3 rounded-full bg-indigo-500 animate-ping"></div>
+              <div className="h-px w-20 bg-gradient-to-l from-transparent to-purple-500"></div>
             </div>
           </div>
 

@@ -8,6 +8,7 @@ import FeaturedProductsSection from '../components/sections/FeaturedProductsSect
 import TestimonialsSection from '../components/sections/TestimonialsSection';
 import TeamSection from '../components/sections/TeamSection';
 import GaleriListSection from '../components/sections/GaleryTeam';
+import PortalBeritaSection from '../components/sections/PortalBeritaSection';
 
 const HomePage: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const HomePage: React.FC = () => {
       <TestimonialsSection /> 
       <TeamSection />
       <GaleriListSection />
+      <PortalBeritaSection />
     </main>
   );
 };

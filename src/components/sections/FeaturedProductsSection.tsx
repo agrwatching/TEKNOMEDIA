@@ -182,9 +182,7 @@ const FeaturedProductsSection: React.FC = () => {
             <ArrowRight size={20} className="ml-2 relative z-10 transform group-hover:translate-x-2 transition-transform duration-300" />
           </a>
         </div>
-
       </div>
-
     </section>
   );
 };
