@@ -15,7 +15,7 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     quote: 'Instalasi Fiber Optik untuk kantor baru kami berjalan sangat cepat dan hasilnya melebihi ekspektasi. Koneksi stabil 24 jam penuh!',
-    name: 'Andi Prawiro',
+    name: 'Dewi Sartika',
     role: 'IT Manager, PT Global Sinergi',
     avatar: 'https://picsum.photos/id/1027/80/80',
     logo: 'Logo Sinergi',
@@ -23,15 +23,15 @@ const testimonials: Testimonial[] = [
   },
   {
     quote: 'Kami menggunakan paket WiFi Mesh untuk gudang kami yang luas. Tidak ada lagi zona mati, semua proses logistik berjalan lancar.',
-    name: 'Citra Dewi',
+    name: 'Budi Santoso',
     role: 'Operation Lead, Toko Maju Jaya',
-    avatar: 'https://picsum.photos/id/1025/80/80',
+    avatar: 'https://picsum.photos/id/1012/80/80',
     logo: 'Logo Maju Jaya',
     rating: 5,
   },
   {
     quote: 'Konsultasi jaringannya sangat membantu. Mereka merancang topologi yang benar-benar efisien dan ramah budget. Sangat direkomendasikan.',
-    name: 'Rahmat Hidayat',
+    name: 'Ayu Lestari',
     role: 'Owner, Kedai Kopi Hangat',
     avatar: 'https://picsum.photos/id/1011/80/80',
     logo: 'Logo Kedai Hangat',

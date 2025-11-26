@@ -28,7 +28,7 @@ interface BloggerFeedData {
   };
 }
 
-// Perluas definisi window untuk mengenali fungsi callback JSONP (penting untuk TypeScript)
+// Perluas definisi window untuk mengenali fungsi callback JSONP
 declare global {
   interface Window {
     [key: string]: ((data: BloggerFeedData) => void) | undefined;
@@ -44,8 +44,8 @@ const PortalBeritaSection = () => {
   const BLOG_SOURCES = useMemo(() => {
     const RAW_BLOG_URLS = import.meta.env.VITE_BLOG_URLS || '';
     return RAW_BLOG_URLS.split(',')
-      .map(url => url.trim())
-      .filter(url => url.startsWith('http'));
+      .map((url: string) => url.trim())
+      .filter((url: string) => url.startsWith('http'));
   }, []);
 
   const MAX_RESULTS = useMemo(() => {
@@ -139,7 +139,7 @@ const PortalBeritaSection = () => {
       }
     };
 
-    BLOG_SOURCES.forEach((baseUrl, index) => {
+    BLOG_SOURCES.forEach((baseUrl: string, index: number) => {
       const callbackName = `bloggerjsonp_${index}`;
       
       // 1. Definisikan callback global
@@ -179,7 +179,7 @@ const PortalBeritaSection = () => {
       scriptTags.push(script);
     });
 
-    // --- CLEANUP YANG SUDAH DIBERSIHKAN DARI GARIS MERAH `_` ---
+    // --- CLEANUP ---
     return () => {
         // Hapus tag <script>
         scriptTags.forEach(script => {
@@ -188,7 +188,7 @@ const PortalBeritaSection = () => {
             }
         });
         
-        // Hapus fungsi global menggunakan for loop (menggantikan forEach((_, index) => ...))
+        // Hapus fungsi global
         for (let index = 0; index < totalExpectedResponses; index++) {
              const callbackName = `bloggerjsonp_${index}`;
              delete window[callbackName];
@@ -201,7 +201,7 @@ const PortalBeritaSection = () => {
 
   if (loading) {
      return (
-      <section className="py-20 bg-gray-50">
+      <section id='blog' className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
@@ -252,7 +252,7 @@ const PortalBeritaSection = () => {
             Berita & Artikel Gabungan
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Menampilkan **{posts.length} artikel terbaru** dari {BLOG_SOURCES.length} sumber blog yang berbeda.
+            Menampilkan <strong>{posts.length} artikel terbaru</strong> dari {BLOG_SOURCES.length} sumber blog yang berbeda.
           </p>
         </div>
 
@@ -343,7 +343,7 @@ const PortalBeritaSection = () => {
               })}
             </div>
 
-            {/* Tombol Kunjungi Portal Utama (link ke blog pertama) */}
+            {/* Tombol Kunjungi Portal Utama */}
             <div className="text-center mt-10">
               <a
                 href={BLOG_SOURCES[0]} 

@@ -1,6 +1,8 @@
 // src/components/sections/TeamSection.tsx
 import React, { useState, useEffect } from 'react';
 import pp1 from '@/assets/pp1.jpg';
+import pp2 from '@/assets/pp2.jpg';
+import pp3 from '@/assets/pp3.jpg';
 import pp4 from '@/assets/pp4.jpg';
 import { Linkedin, Instagram, Facebook, Twitter, MessageSquare } from 'lucide-react';
 
@@ -39,7 +41,7 @@ const teamMembers: TeamMember[] = [
     whatsapp: '628123456789',
   },
   {
-    image: 'https://picsum.photos/id/177/300/300',
+    image: pp2,
     name: 'INDRA ADE, S. Kom',
     role: 'E-Learning System Developer & Network Specialist',
     description:
@@ -51,7 +53,7 @@ const teamMembers: TeamMember[] = [
     whatsapp: '628123456789',
   },
   {
-    image: 'https://picsum.photos/id/187/300/300',
+    image: pp3,
     name: 'YUSUF FAISAL',
     role: 'Windows Server Administrator & Infrastructure Engineer',
     description:

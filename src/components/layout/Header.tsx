@@ -149,7 +149,7 @@ const Header = () => {
               {isElearningOpen && (
                 <div className="absolute right-0 mt-3 w-60 bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-gray-200 z-50 overflow-hidden animate-[slideDown_0.3s_ease-out]">
                   <a
-                    href="https://lms.teknomedia.id/"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setIsElearningOpen(false)}
@@ -275,7 +275,7 @@ const Header = () => {
                 </div>
                 
                 <a
-                  href="https://lms.teknomedia.id/"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setIsMobileMenuOpen(false)}

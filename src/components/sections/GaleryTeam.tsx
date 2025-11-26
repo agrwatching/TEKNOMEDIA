@@ -1,6 +1,12 @@
 // src/components/sections/GaleryTeam.tsx
 import React, { useState } from 'react';
 import { ImageIcon, Camera, Eye, ZoomIn, Heart } from 'lucide-react';
+import pp1 from '@/assets/colabvtnet.jpg';
+import pp2 from '@/assets/gurutamu.jpg';
+import pp3 from '@/assets/elearning.jpg';
+import pp4 from '@/assets/server.jpg';
+import pp5 from '@/assets/maintenancep.jpg';
+import pp6 from '@/assets/colab.png';
 
 interface GalleryItem {
   id: number;
@@ -12,37 +18,37 @@ interface GalleryItem {
 const galleryItems: GalleryItem[] = [
   {
     id: 1,
-    image: 'https://picsum.photos/400/300?random=11',
+    image: pp1,
     title: 'Meeting & Diskusi Proyek',
     description: 'Sesi brainstorming bersama tim untuk merancang solusi jaringan sekolah modern.',
   },
   {
     id: 2,
-    image: 'https://picsum.photos/400/300?random=12',
+    image: pp2,
     title: 'Implementasi Fiber Optik',
     description: 'Tim lapangan melakukan penarikan kabel dan konfigurasi perangkat FO.',
   },
   {
     id: 3,
-    image: 'https://picsum.photos/400/300?random=13',
+    image: pp3,
     title: 'Training E-Learning',
     description: 'Pelatihan penggunaan platform e-learning untuk guru dan staf sekolah.',
   },
   {
     id: 4,
-    image: 'https://picsum.photos/400/300?random=14',
+    image: pp4,
     title: 'Setup Server Sekolah',
     description: 'Konfigurasi Windows Server untuk manajemen user dan data sekolah.',
   },
   {
     id: 5,
-    image: 'https://picsum.photos/400/300?random=15',
+    image: pp5,
     title: 'Maintenance Perangkat',
     description: 'Pemeliharaan rutin access point dan switch jaringan.',
   },
   {
     id: 6,
-    image: 'https://picsum.photos/400/300?random=16',
+    image: pp6,
     title: 'Kolaborasi Tim',
     description: 'Dokumentasi kolaborasi internal untuk meningkatkan layanan digital.',
   },
@@ -133,7 +139,7 @@ const GaleryTeam: React.FC = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Polaroid Frame Effect */}
-              <div className="relative bg-white rounded-lg shadow-xl border-8 border-white transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 hover:rotate-2 overflow-hidden">
+              <div className="relative bg-white rounded-lg shadow-xl border-8 border-white transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 hover:rotate-2 overflow-hidden h-full flex flex-col">
                 
                 {/* Photo Container */}
                 <div className="relative h-64 w-full bg-gray-200 overflow-hidden">

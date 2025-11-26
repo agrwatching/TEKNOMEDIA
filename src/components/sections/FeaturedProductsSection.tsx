@@ -1,6 +1,9 @@
 // src/components/sections/FeaturedProductsSection.tsx
 import React, { useState } from 'react';
 import { Image, Award, Sparkles, Zap, ArrowRight } from 'lucide-react';
+import pp1 from '@/assets/instalasi jaringan.webp';
+import pp2 from '@/assets/elearning.jpg';
+import pp3 from '@/assets/server.jpg';
 
 interface Achievement {
   image: string;
@@ -12,19 +15,19 @@ interface Achievement {
 // Data Karya & Pencapaian
 const achievements: Achievement[] = [
   {
-    image: 'https://picsum.photos/300/200?random=1',
+    image: pp1,
     title: 'Instalasi Jaringan Kampus Negeri',
     description: 'Implementasi jaringan fiber optik dan WiFi kampus untuk mendukung proses belajar mengajar berbasis digital.',
     tag: 'Project Besar',
   },
   {
-    image: 'https://picsum.photos/300/200?random=2',
+    image: pp2,
     title: 'Pengembangan Platform E-Learning',
     description: 'Sistem pembelajaran digital lengkap dengan modul, video, ujian online, hingga pelaporan otomatis.',
     tag: 'Inovasi Digital',
   },
   {
-    image: 'https://picsum.photos/300/200?random=3',
+    image: pp3,
     title: 'Integrasi Server & Infrastruktur IT',
     description: 'Setup Windows Server, manajemen user, dan konfigurasi infrastruktur IT untuk sekolah & instansi.',
     tag: 'Solusi Profesional',
@@ -91,7 +94,7 @@ const FeaturedProductsSection: React.FC = () => {
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {/* Card Container */}
-              <div className="relative bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/20 hover:-translate-y-2">
+              <div className="relative bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/20 hover:-translate-y-2 h-full flex flex-col">
                 
                 {/* Glow Effect on Hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 via-purple-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

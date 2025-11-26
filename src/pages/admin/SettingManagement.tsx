@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {
-  Settings,
   Globe,
   Bell,
   Lock,
@@ -12,18 +11,11 @@ import {
   CreditCard,
   Zap,
   Code,
-  Eye,
-  EyeOff,
   Save,
   RefreshCw,
   AlertCircle,
   CheckCircle,
-  Moon,
-  Sun,
-  Languages,
   FileText,
-  Image,
-  Video,
   Server,
   Key,
   Activity
@@ -327,8 +319,6 @@ const RecentActivity: React.FC = () => {
 
 // ===== MAIN COMPONENT =====
 const SettingManagement: React.FC = () => {
-  const [selectedSetting, setSelectedSetting] = useState<string | null>(null);
-
   return (
     <div className="min-h-screen bg-white p-4 md:p-6 lg:p-8">
       <style>{`
@@ -393,7 +383,7 @@ const SettingManagement: React.FC = () => {
               <SettingCard
                 key={idx}
                 {...category}
-                onClick={() => setSelectedSetting(category.title)}
+                onClick={() => console.log(`Opened: ${category.title}`)}
               />
             ))}
           </div>

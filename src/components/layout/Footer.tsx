@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-bold mb-4 border-b border-primary/50 pb-1  pt-4 md:pt-0">Produk</h3>
             <ul className="space-y-2 text-background/70 text-sm">
-              <li><a href="#" className="hover:text-primary transition-colors">LMS Teknomedia</a></li>
+              <li><a href="https://lms.xplore.id/" className="hover:text-primary transition-colors">LMS Teknomedia</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Mobile App</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Virtual Classroom</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Content Library</a></li>
@@ -60,9 +60,9 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-bold mb-4 border-b border-primary/50 pb-1">Perusahaan</h3>
             <ul className="space-y-2 text-background/70 text-sm">
               <li><a href="#about" className="hover:text-primary transition-colors">Tentang Kami</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Karir</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Partnership</a></li>
+              <li><a href="#company" className="hover:text-primary transition-colors">Karir</a></li>
+              <li><a href="#blog" className="hover:text-primary transition-colors">Blog</a></li>
+              <li><a href="#team" className="hover:text-primary transition-colors">Partnership</a></li>
             </ul>
           </div>
 

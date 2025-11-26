@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { 
   Search, 
-  Filter, 
   Plus, 
   MoreVertical, 
   Edit, 
@@ -9,8 +8,6 @@ import {
   Mail, 
   Phone, 
   Calendar,
-  Check,
-  X,
   UserCheck,
   UserX,
   Shield,

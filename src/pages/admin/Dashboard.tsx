@@ -204,8 +204,8 @@ const StatCard: React.FC<StatCardProps> = ({ icon: Icon, label, value, change, c
 };
 
 const ActivityItem: React.FC<ActivityItemProps> = ({ user, action, time, type }) => {
-  const getTypeColor = (type: string): string => {
-    switch (type) {
+  const getTypeColor = (typeStr: string): string => {
+    switch (typeStr) {
       case "success":
         return "bg-green-500";
       case "warning":
@@ -241,9 +241,9 @@ const CustomTooltip: React.FC<CustomTooltipProps> = ({ active, payload, label })
     return (
       <div className="bg-white p-3 md:p-4 rounded-xl shadow-2xl border border-gray-200">
         <p className="text-gray-900 font-semibold mb-2 text-sm md:text-base">{label}</p>
-        {payload.map((entry, index) => (
-          <p key={index} className="text-xs md:text-sm font-medium" style={{ color: entry.color }}>
-            {entry.name}: {entry.value.toLocaleString()}
+        {payload.map((entryItem, index) => (
+          <p key={index} className="text-xs md:text-sm font-medium" style={{ color: entryItem.color }}>
+            {entryItem.name}: {entryItem.value.toLocaleString()}
           </p>
         ))}
       </div>
@@ -424,7 +424,7 @@ const AdminDashboard: React.FC = () => {
                   animationDuration={1500}
                   style={{ fontSize: '11px' }}
                 >
-                  {CONTENT_DATA.map((entry, index) => (
+                  {CONTENT_DATA.map((_, index) => (
                     <Cell
                       key={`cell-${index}`}
                       fill={COLORS[index % COLORS.length]}
