@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   return (
     <footer id="contact" className="bg-foreground text-background py-12 md:py-20"> 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8 mb-12">
           
           {/* KOLOM 1: Logo & Deskripsi */}
           <div>
@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
 
           {/* KOLOM 2: Produk */}
           <div>
-            <h3 className="text-lg font-bold mb-4 border-b border-primary/50 pb-1 pt-4 md:pt-0">Produk</h3>
+            <h3 className="text-lg font-bold mb-4 border-b border-primary/50 pb-1">Produk</h3>
             <ul className="space-y-2 text-background/70 text-sm">
               <li><a href="https://lms.xplore.id/" className="hover:text-primary transition-colors">LMS Teknomedia</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Mobile App</a></li>
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* KOLOM 4: Kontak - FIXED OVERFLOW */}
-          <div className="col-span-2 md:col-span-1">
+          <div>
             <h3 className="text-lg font-bold mb-4 border-b border-primary/50 pb-1">Kontak</h3>
             <ul className="space-y-3 text-background/70 text-sm">
               <li className="flex items-start">
